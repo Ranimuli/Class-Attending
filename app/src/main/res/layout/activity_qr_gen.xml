@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.attendclassapps.activities.QrGeneratorActivity">
+
+    <TextView
+        android:id="@+id/subjectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/idText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/subjectText"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="80dp" />
+
+    <EditText
+        android:id="@+id/inSJName"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignBaseline="@+id/subjectText"
+        android:layout_alignBottom="@+id/subjectText"
+        android:layout_toEndOf="@+id/subjectText"
+        android:inputType="none" />
+
+    <EditText
+        android:id="@+id/inSJid"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignBaseline="@+id/idText"
+        android:layout_alignBottom="@+id/idText"
+        android:layout_toEndOf="@+id/idText"
+        android:inputType="none" />
+
+    <Button
+        android:id="@+id/vBtnQRGen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/qr_code_add"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vBtnQRGen"
+        android:layout_alignStart="@id/vBtnQRGen"
+        android:layout_alignEnd="@id/vBtnQRGen"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:text=" Generate" />
+
+    <Button
+        android:id="@+id/vBtnQRView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="70dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/qr_code" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vBtnQRGen"
+        android:layout_alignStart="@id/vBtnQRView"
+        android:layout_alignEnd="@id/vBtnQRView"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:text="QR View" />
+
+</RelativeLayout>

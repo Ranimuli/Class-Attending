@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerNavMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.attendclassapps.activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation = "vertical"
+        android:padding="@dimen/activity_base_padding"
+        android:gravity="center_horizontal|center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ivUserImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/teacher" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/nameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="@string/NameView"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/idView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="@string/IdView"
+                android:textSize="30sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/vBtnQrCodeGen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="2dp"
+                android:background="@drawable/bg_button_qrgen">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_base_padding"
+                    android:background="?attr/selectableItemBackgroundBorderless">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="@dimen/ic_qr_width"
+                        android:layout_height="@dimen/ic_qr_height"
+                        android:background="@drawable/qr_code"
+                        android:layout_marginEnd="5dp"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_qr_code_generator"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vBtnQrCodeReader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:elevation="2dp"
+                android:background="@drawable/bg_button_qrgen">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_base_padding"
+                    android:background="?attr/selectableItemBackgroundBorderless">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="@dimen/ic_qr_width"
+                        android:layout_height="@dimen/ic_qr_height"
+                        android:background="@drawable/qr_code_scan"
+                        android:layout_marginEnd="5dp"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_qr_code_reader"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/NavMenuList"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:itemTextColor = "@color/darkGray"
+        app:itemIconTint = "@color/darkGray"
+        app:menu = "@menu/teacher_and_student_menu"
+        android:layout_gravity = "start" >
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

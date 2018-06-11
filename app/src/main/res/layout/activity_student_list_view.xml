@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    tools:context="com.example.attendclassapps.activities.QrViewActivity" >
+
+    <TextView
+        android:id="@+id/subjectShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have no class open yet."
+        android:textSize="20sp"
+        android:layout_margin="10sp"
+        android:textColor="@color/AppFont2"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:id="@+id/listVStudent"
+        android:background="@color/AppFont2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/subjectShow"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+</RelativeLayout>

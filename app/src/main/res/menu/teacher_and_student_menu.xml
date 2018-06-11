@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/gpItem1"
+        android:checkableBehavior="single"
+        android:visible="true">
+    <item android:id="@+id/menu_QrCodeGenerator" android:title="Qr Code Generator" android:icon="@drawable/ic_add_box" />
+    <item android:id="@+id/menu_QrCodeView" android:title="Qr Code View" android:icon="@drawable/qr_code"/>
+    <item android:id="@+id/menu_StudentListView" android:title="Student List " android:icon="@drawable/ic_assignment_turned_in"/>
+    </group>
+    <group
+        android:id="@+id/gpItem2"
+        android:checkableBehavior="single"
+        android:visible="true">
+        <item android:id="@+id/menu_QrCodeReader" android:title="Qr Code Reader" android:icon="@drawable/qr_code_scan"/>
+        <item android:id="@+id/menu_ClassSchedule" android:title="Class Schedule" android:icon="@drawable/ic_date_range"/>
+    </group>
+    <group
+        android:id="@+id/gpItem3"
+        android:checkableBehavior="single"
+        android:visible="true">
+        <item android:id="@+id/menu_FBcontact" android:title="Contact" android:icon="@drawable/facebook_letter_logo"/>
+        <item android:id="@+id/menu_aboutMe" android:title="About me" android:icon="@drawable/ic_account_box" />
+    </group>
+</menu>

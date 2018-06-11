@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10sp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/viewStudentID"
+        android:text="Student ID"
+        android:textColor="@color/AppFont2"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/viewStudentName"
+        android:text="Student Name"
+        android:textColor="@color/AppFont2"
+        android:textSize="17sp"
+        android:layout_below="@id/viewStudentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/viewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/viewStudentID"
+        android:layout_alignBottom="@+id/viewStudentID"
+        android:layout_alignParentEnd="true"
+        android:text="Check Time"
+        android:textColor="@color/detectTime"
+        android:textSize="12sp" />
+
+</RelativeLayout>

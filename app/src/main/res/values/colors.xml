@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff8f00</color>
+    <color name="colorPrimaryDark">#c56000</color>
+    <color name="colorAccent">#ffc046</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkGray">#6c6c6c</color>
+    <color name="lightGray">#bdbdbd</color>
+    <color name="black">#000000</color>
+    <color name="AppTone">#2a2a2a</color>
+    <color name="AppFont">#ffffff</color>
+    <color name="AppFont2">#1a1a1a</color>
+    <color name="monday">#fff176</color>
+    <color name="mondayHL">#fbc02d</color>
+    <color name="tuesday">#f48fb1</color>
+    <color name="tuesdayHL">#ec407a</color>
+    <color name="wednesday">#a5d6a7</color>
+    <color name="wednesdayHL">#558b2f</color>
+    <color name="thursday">#ffcc80</color>
+    <color name="thursdayHL">#f57c00</color>
+    <color name="friday">#81d4fa</color>
+    <color name="fridayHl">#0091ea</color>
+    <color name="saturday">#b39ddb</color>
+    <color name="saturdayHL">#5e35b1</color>
+    <color name="detectTime">#33691E</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorEmber800">#FF8F00</color>
+    <color name="colorLine">#BFBFBF</color>
+</resources>

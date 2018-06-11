@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "537386679086",
+    "firebase_url": "https://attend-class-application.firebaseio.com",
+    "project_id": "attend-class-application",
+    "storage_bucket": "attend-class-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537386679086:android:0aa0472a60f34ad1",
+        "android_client_info": {
+          "package_name": "com.example.attendclassapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537386679086-2m5acpl6h4utknukanhsbbbts8em0pa8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.attendclassapps",
+            "certificate_hash": "b616cb1ef8e50d7aeae582cae6770bac8fbc2992"
+          }
+        },
+        {
+          "client_id": "537386679086-1tkgih14vbiscjckk7dbvjqe74t2s3a3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5QTpnWn7QMFkK6I2Udsr1FMikZ7KSDwk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537386679086-1tkgih14vbiscjckk7dbvjqe74t2s3a3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
