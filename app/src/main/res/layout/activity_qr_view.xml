@@ -6,14 +6,12 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.example.attendclassapps.activities.QrViewActivity">
+    tools:context="com.example.attendclassapps.ui.view.QrViewActivity">
 
     <LinearLayout
         android:id="@+id/vQrCode"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="156dp"
-        android:layout_toEndOf="@+id/viewStudentName"
         android:gravity="center_vertical"
         android:orientation="vertical"
         android:padding="@dimen/activity_base_padding">

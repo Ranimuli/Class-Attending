@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_attend_class_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.SplashScreen"
+        <activity android:name=".ui.SplashScreen"
             android:configChanges="keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize">
@@ -24,30 +24,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.MainActivity" />
+            android:name=".ui.main.MainActivity" />
         <activity
-            android:name=".activities.QrGeneratorActivity"
+            android:name=".ui.generator.QrGeneratorActivity"
             android:configChanges="keyboardHidden"
             android:screenOrientation="portrait"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName=".ui.main.MainActivity"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-        <activity android:name=".activities.ReaderActivity" />
+        <activity android:name=".ui.reader.ReaderActivity" />
         <activity
-            android:name=".activities.QrViewActivity"
+            android:name=".ui.view.QrViewActivity"
             android:screenOrientation="portrait"
-            android:parentActivityName=".activities.MainActivity"/>
+            android:parentActivityName=".ui.main.MainActivity"/>
         <activity
-            android:name=".activities.ClassScheduleActivity"
+            android:name=".ui.classSchedule.ClassScheduleActivity"
             android:screenOrientation="portrait"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName=".ui.main.MainActivity"
             android:label="@string/title_activity_class_schedule" />
         <activity
-            android:name=".activities.StudentListViewActivity"
+            android:name=".ui.main.StudentListViewActivity"
             android:screenOrientation="portrait"
-            android:parentActivityName=".activities.MainActivity"/>
-        <activity android:name=".activities.StudentSendDataToFirebaseActivity" />
+            android:parentActivityName=".ui.main.MainActivity"/>
+        <activity android:name=".ui.reader.StudentSendDataToFirebase" />
         <activity
-            android:name=".activities.UserSignInToFirebaseActivity"/>
+            android:name=".ui.main.UserSignInToFirebase"/>
     </application>
 
 </manifest>

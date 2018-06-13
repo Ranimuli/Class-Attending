@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/saturday"
-    tools:context="com.example.attendclassapps.activities.QrViewActivity" >
+    tools:context="com.example.attendclassapps.ui.view.QrViewActivity" >
 
     <ListView
         android:id="@+id/classListSat"
