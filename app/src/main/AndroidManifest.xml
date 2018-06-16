@@ -13,9 +13,11 @@
         android:roundIcon="@mipmap/ic_attend_class_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".ui.SplashScreen"
             android:configChanges="keyboardHidden"
             android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
             android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

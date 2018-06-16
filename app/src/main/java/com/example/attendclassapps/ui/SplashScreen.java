@@ -9,6 +9,8 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatEditText;
 import android.util.Log;
 import android.view.View;
@@ -23,9 +25,9 @@ import com.example.attendclassapps.db.session.SessionCheck;
 import com.example.attendclassapps.db.session.UserSession;
 import com.example.attendclassapps.ui.main.MainActivity;
 
-public class SplashScreen extends Activity {
+public class SplashScreen extends AppCompatActivity {
 
-    public int SPLASH_TIME = 3000;
+    public int SPLASH_TIME = 1000;
     protected AppCompatEditText login_ID;
     protected LinearLayout BtnLogin;
     private AttendClassDatabaseHelper attendClassDatabaseHelper;
@@ -37,13 +39,7 @@ public class SplashScreen extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_splash_screen);
-
-        View decorView = getWindow().getDecorView();
-        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_FULLSCREEN;
-        decorView.setSystemUiVisibility(uiOptions);
 
         sessionCheck = new SessionCheck(SplashScreen.this);
         attendClassDatabaseHelper = new AttendClassDatabaseHelper(SplashScreen.this);
@@ -60,7 +56,7 @@ public class SplashScreen extends Activity {
                 if (sessionCheck.logged_in()) {
                     Intent mainIntent = new Intent(getApplicationContext() , MainActivity.class);
                     startActivity(mainIntent);
-                    finish();
+                    ActivityCompat.finishAffinity(SplashScreen.this);
                 }
                 else {
                     LoginDialog();
