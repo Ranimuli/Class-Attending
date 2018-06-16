@@ -17,7 +17,6 @@ public class QrGeneratorActivity extends AppCompatActivity {
     private AppCompatEditText SubjectNameText, SubjectIdText;
     private String setTextSjName, setTextSjId;
     private LinearLayout generateBt,qrViewBt;
-    public SharedPreferences sharedPreferences;
     Qr_GetTextForGenerate qr_getTextForGenerate;
     private static final String TAG = "Log_Attend_Class";
 
@@ -50,30 +49,11 @@ public class QrGeneratorActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), QrViewActivity.class));
             }
         });
-        /*sharedPreferences = getSharedPreferences(sp_KEY, Context.MODE_PRIVATE);
-        SubjectNameText.setText(sharedPreferences.getString(subjectName_KEY, ""));
-        SubjectIdText.setText(sharedPreferences.getString(subjectId_KEY,""));*/
+
         SubjectNameText.setText("");
         SubjectIdText.setText("");
         Log.i(TAG, "QrGenActivity_onCreate");
     }
-
-    /*@Override
-    protected void onDestroy(){
-        super.onDestroy();
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString(subjectName_KEY , SubjectNameText.getText().toString());
-        editor.putString(subjectId_KEY , SubjectIdText.getText().toString());
-        editor.commit();
-        Log.i(TAG, "QrGenActivity_onDestroy");
-    }*/
-
-    /*@Override
-    protected void onPause() {
-        super.onPause();
-
-        Log.i(TAG, "QrGenActivity_onPause");
-    }*/
 
     protected void bindView(){
         qrViewBt = this.findViewById(R.id.vBtnQRView);
