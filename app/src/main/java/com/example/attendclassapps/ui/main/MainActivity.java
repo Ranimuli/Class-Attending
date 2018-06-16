@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private static final String TAG = "Log_Attend_Class";
     private SessionCheck sessionCheck;
     protected UserSession userSession;
-    private static final int ACTIVITY_NOT_INITIALIZED = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
